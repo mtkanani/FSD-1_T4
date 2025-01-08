@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            document.write("welcome to function")
+        }
+        function name1(fname,surname){
+            document.write(fname+' '+surname);
+        }
+        function product(a,b)
+        {
+            return a*b
+        }
+        var a=function(x,y)
+        {
+            return x+y
+        }
+        let result=a(3,5)
+        const ab=[2,3,4,5,6]
+        function a1(){
+            for(i=0;i<ab.length;i++){
+                document.write(ab[i]*2+'<br> ')
+            }
+        }
+        function hello(){
+            var a=info("mt","kanani")
+            document.write(a)
+        }
+        function info(a,b){
+            var full=a+' '+b
+            return full
+
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" onclick="name1('MT','KANANI')" value="click here">
+    <input type="button" onclick="document.write(product(6,10))" value="click here">
+    <input type="button" onclick="document.write(result)" value="click here">
+    <input type="button" onclick="a1()" value="click here">
+    <input type="button" onclick="hello()" value="click here">
+
+</body>
+</html>
