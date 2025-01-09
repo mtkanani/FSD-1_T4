@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function warn(){
+            alert("this is warning massage")
+            document.write("warning")
+        }
+        function conf(){
+            res=confirm("Do you went to continue")
+            if(res==true){
+                document.write("user wants")
+                return true
+            }
+            else{
+                document.write("user dont want")
+                return false
+            }
+        }
+        function prompt(){
+            var name=prompt("Enter your name");
+            document.write("you entered"+name)
+        }
+    </script>
+    <input type="button" onclick="warn()" value="okk"/>
+    <input type="button" onclick="conf()" value="okk1"/>
+    <input type="button" onclick="prompt()" value="okk2"/>
+</body>
+</html>

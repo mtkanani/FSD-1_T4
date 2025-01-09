@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1> Math mathod </h1>")
+
+        //math object
+        document.write("Max "+Math.max(10,12)+'<br>')
+        document.write("Min "+Math.min(10,12)+'<br>')
+        document.write("Round "+Math.round(10.23)+'<br>')
+        document.write("Round(-) "+Math.round(-10.73)+'<br>')
+        document.write("ceil "+Math.ceil(10.3)+'<br>')
+        document.write("ceil(-) "+Math.ceil(-10.3)+'<br>')
+        document.write("Floor "+Math.floor(10.12)+'<br>')
+        document.write("Floor(-) "+Math.floor(-10.12)+'<br>')
+        document.write("Power "+Math.pow(2,5)+'<br>')
+        document.write("Abs "+Math.abs(-10)+'<br>')
+        document.write("Square root "+Math.sqrt(25)+'<br>')
+        let x="hello"
+        let y="world"
+        let x1="this is demo"
+        let y1="hello world,welocome to the universe"
+        document.write("<h1> string methods </h1>")
+        document.write("<br>"+"char at 0 position: "+x.charAt(0));
+        document.write("<br>"+"char at asccii: "+x.charCodeAt(0));
+        document.write("<br>"+"concat: "+x.concat(y))
+        document.write("<br>"+"replace: "+x.replace("hel",y))
+        document.write("<br>"+"split: "+x.split("l"))
+        document.write("<br>"+"split: "+x1.split(" "))
+        document.write("<br>"+"substr: "+x1.substr(2,5))
+        document.write("<br>"+"substring: "+x1.substring(2,6))
+        document.write("<br>"+"upper case: "+x.toUpperCase());
+        document.write("<br>"+"lower case: "+y.toLowerCase());
+        document.write("<br>")
+        document.write("<h1> Time mathod </h1>")
+        var d1=new Date()
+        document.write(d1)
+        document.write("<br>"+"getday "+d1.getDay())
+        document.write("<br>"+"get day"+d1.getDate())
+        document.write("<br>"+"getfullyear"+d1.getFullYear())
+        document.write("<br>"+"getmonth"+d1.getMonth())
+        document.write("<br>"+"gettime"+d1.getTime())
+        document.write("<br>"+"gethours"+d1.getHours())
+        document.write("<br>"+"getminutes"+d1.getMinutes())
+        document.write("<br>"+"getsecond"+d1.getSeconds())
+        document.write("<br>"+"getmilisecond"+d1.getMilliseconds())
+
+        document.write("<h1> find time to your birthdate </h1>")
+        function daydif(date1,date2){
+            one_day=24*60*60*1000
+            date1_ms=date1.getTime()
+            //document.write(date1_ms)
+            date2_ms=date2.getTime()
+            //document.write(date2_ms)
+            diff_ms=Math.abs(date1_ms-date2_ms)
+            return(Math.round(diff_ms/one_day))
+        }
+        var d1=new Date()
+        d1.setDate(18)
+        d1.setMonth(2)
+        var d2=new Date();
+        document.write("no of days left: "+daydif(d1,d2));
+
+    </script>
+</body>
+</html>
