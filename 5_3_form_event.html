@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" onsubmit="test()">
+        <input type="text" name="fname" id="fnn"><br>
+        <input type="text" name="mname" value="hello" id="mnn" onchange="ch()"><br>
+        <input type="text" name="mname" value="hello" id="mn1" onfocus="this.style.backgroundColor='yellow'"><br>
+        <input type="text" name="mname" value="HELLO" id="mn1" onblur="this.style.textTransform='lowercase'">
+
+        <button type="submit">Submit</button> 
+    </form>
+    <script>
+        function test(){
+            f=document.getElementById('fnn');
+            alert("Form is submit Welcome "+f.value+" to our page")
+        }
+        function ch(){
+            // e.style.textTransform='uppercase'
+            a=document.getElementById('mnn')
+            a.value=a.value.toUpperCase()
+        }
+        // function ch(){
+        //     // e.style.textTransform='uppercase'
+        //     a=document.getElementById('mn1')
+        //     a=
+        // }
+    </script>
+</body>
+</html>

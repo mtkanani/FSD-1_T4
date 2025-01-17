@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Tag Name</title>
+</head>
+<body>
+    <p>HELLO</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p id="p1"></p>
+    <script>
+        pele=document.getElementsByTagName('p')
+        pele[0].innerHTML='FSD-1'
+        pele[1].innerHTML='Python-1'
+
+        for (let i = 0; i < pele.length; i++) {
+            pele[i].innerHTML='Hi';
+        }
+    </script>
+</body>
+</html>

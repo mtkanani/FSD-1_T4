@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event hendaling in js</title>
+</head>
+<body>
+    <!-- MOUSE EVENTS
+    1.onclick
+    2.onmousedown,onmouseup
+    3.onmouseover,onmouseoute
+    4.-->
+     <!-- <div onmousedown="mdown(this)" onmouseup="mup(this)" style="height: 20;width: 70;background-color: lightblue;">Clck-here</div>
+     <script>
+        function mdown(e){
+            e.style.backgroundColor='yellow'
+            e.innerHTML='Click'
+        }
+        function mup(e){
+            e.style.backgroundColor='pink'
+            e.innerHTML='Relies'
+        }
+     </script>  -->
+     <div onmouseover="mdown(this)" onmouseout="mup(this)" style="height: 20px;width: 70px;background-color: lightblue;">Clck-here</div>
+     <script>
+        function mdown(e){
+            e.style.backgroundColor='yellow'
+            e.innerHTML='On Mouse Over'
+        }
+        function mup(e){
+            e.style.backgroundColor='pink'
+            e.innerHTML='On Mouse Out'
+        }
+     </script>
+</body>
+</html>

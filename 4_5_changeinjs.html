@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change In JS</title>
+
+</head>
+<body>
+    <p>p tag 1</p>
+    <p class="pc">p tag 2</p>
+    <p id="p1">p tag 3</p>
+    <input type="button" onclick="demo()" value="CLICK">
+    <script>
+        function demo(){
+            pele=document.getElementsByTagName('p')
+            pid=document.getElementById('p1')
+            pcl=document.getElementsByClassName('pc')
+            for (let i = 0; i < pele.length; i++) {
+            pele[i].innerHTML='Change text by element name';
+            }
+            pcl[0].innerHTML='Change text by class name'
+            pcl[0].style.backgroundColor='yellow'
+            pid.style.backgroundColor='cyan'
+        }
+    </script>
+</body>
+</html>
