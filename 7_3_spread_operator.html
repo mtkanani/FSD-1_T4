@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick=fun()>
+        <p id="demo"></p>
+    </p>
+    <script>
+        odd=[1,2,4]
+        combine=[6,7,8,...odd]
+        console.log(combine)
+        console.log(...combine)
+
+        const num1=[23,55,21,87,56]
+        const num2=[15,16,18,99]
+        const fnum=[...num1,...num2]
+        let max=Math.max(...fnum)
+        console.log(max)
+        let p=document.getElementById('demo')
+        p.innerHTML=max;
+    </script>
+    
+
+</body>
+</html>
