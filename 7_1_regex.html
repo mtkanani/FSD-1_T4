@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1" >
+        <input type="text" name="tn" id="i1">
+        <input type="password" name="pass" id="i2">        
+        <input type="email" name="em" id="i3">        
+        <input type="submit" onclick="fun()" value="btn">
+
+
+    </form>
+    <script>
+        function fun(){
+            //[a-z,A-Z,0-9,_]>>\w
+            //[a-z,A-Z]>>\W capital
+            //pat=/abc/i //cap abc and sm abc in text
+            //pat=/[xyz]/i //one of them in text box here i is for cap/small
+            // pat=/[^abc]/ //not allow only a or b or c or abc
+            // pat=/[0-9]/ //in name one of digit from 0-9 is must be there
+            // pat=/[^0-9]/ //one alphabet with the digit(onl digit not allow)
+            // pat=/[x/y]/ //name must have x or y or both
+            // pat=/^A/ //must start with A
+            // pat=/Bo*/ //Bis must or o is 
+            // pat=/t$/ //must end with t 
+            // pat=/^\d{10}$/ //end with digit and 10 digit only
+            // pat=/^[0-9]{6,12}$/ //name must be 3 to
+            pat1=/^_|^@|^\d/
+            // pat2=/^\w+@\w+(\.\w{2,3})+$/ //mitesh@ljku.edu.in
+            pat2=/^\w+([.]?\w+)@\w+(\.\w{2,3})+$/ //mitesh.thakkar@ljku.edu.in
+            u1=document.getElementById('i1').value
+            u2=document.getElementById('i2').value
+            u3=document.getElementById('i3').value
+            if(u1.length == 0|| u2.length== 0){
+                alert('please enter username and passsward')
+            }
+            else if(u2.length<6 || u2.length>12){
+              alert('pass is invalid')
+             }
+           else if(pat1.test(u1)){
+                 alert('invalid username')
+           }
+           else if(!pat2.test(u3)){
+            alert("invalid email")
+           }
+         else
+         {
+             alert('Welcome'+ u1)
+            
+        }
+    }
+    </script>
+    
+</body>
+</html>

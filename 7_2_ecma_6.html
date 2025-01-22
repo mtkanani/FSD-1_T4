@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fname='abc'
+        let lname='xyz'
+        let text=`welcome ${fname},${lname}`;
+        document.write("welcome"+fname+lname)
+        console.log(text)
+        let a=10
+        let b=20
+        let total=`Total : ${a*(b+1)}`;
+        console.log(total)
+        let ans=10
+        console.log(`welcome
+        Answer=${ans}`)
+        document.write(`welcome
+        Answer=${ans}`)
+
+        //arrow function 
+        const fun1= () =>{
+            return 'hello';
+        }
+        console.log(fun1())
+        const fun2= () => "hello world";
+        console.log(fun2())
+        const fun3= val => "hello" +val;
+        console.log(fun3('world'))
+
+        const fun4= (val1,val2) => {
+            let ans=val1+val2
+            return ans
+        }
+        console.log(`Addition = ${fun4(15,10)}`)
+        
+    </script>
+</body>
+</html>
